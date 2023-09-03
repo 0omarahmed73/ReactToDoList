@@ -1,0 +1,89 @@
+.todo {
+  width: 100%;
+  background-color: white;
+  min-height: 70px;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 15px;
+  border-radius: 10px;
+  .firstPart {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    .sign {
+      height: 30px;
+      width: 30px;
+      border-radius: 7px;
+      background-color: #DEDFE1;
+      cursor: pointer;
+    }
+
+    .texts {
+      text-align: left;
+      font-size: 14px;
+
+      & p:nth-of-type(1) {
+        color: #585858;
+        font-size: 15px;
+      }
+
+      & p:nth-of-type(2) {
+        font-size: 12px;
+        color: #585858;
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    .icon {
+      background-color: #DEDFE1;
+      color: #585858;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        background-color: #7e89fe;
+        color: white;
+      }
+      &:active {
+        background-color: #424aa2;
+        color: white;
+      }
+    }
+  }
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    background-color:rgb(79, 79, 79) !important ;
+  }
+  .sign-icon {
+    
+  }
+}

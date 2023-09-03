@@ -1,0 +1,85 @@
+.buttons {
+  max-width: 60%;
+  margin: auto;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 576px;
+  
+@media screen and (min-width:576px) {
+  & {
+    width: 60%;
+  }
+}
+@media screen and (min-width:768px) {
+  & {
+    width: 60%;
+  }
+}
+
+/* sm */
+@media screen and (min-width:992px) {
+  & {
+    width: 100%;
+  }
+}
+
+/* lg */
+@media screen and (min-width:1200px) {
+  & {
+    width: 100%;
+  }
+}
+
+  .btn {
+    all: unset;
+    padding: 0px 20px;
+    border-radius: 7.5px;
+    background-color: #646FF0;
+    color: white;
+    font-style: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      background-color: #7e89fe;
+    }
+    &:active {
+      background-color: #424aa2;
+    }
+  }
+
+  & select {
+    background-color: #CCCDDE;
+    color: black;
+    border: none;
+    padding-block: 10px;
+    font-weight: 500;
+    padding-inline: 10px 30px;
+    border-radius: 7.5px;
+    font-size: 15px;
+    color: #585858;
+    cursor: pointer;
+  }
+}
+
+.btn {
+  all: unset;
+  padding: 0px 20px;
+  border-radius: 7.5px;
+  background-color: #646FF0;
+  color: white;
+  font-style: 15px;
+  font-weight: 500;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: #7e89fe;
+  }
+  &:active {
+    background-color: #424aa2;
+  }
+}

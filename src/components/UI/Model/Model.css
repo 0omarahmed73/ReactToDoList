@@ -1,0 +1,35 @@
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  .model-body {
+    width: 90%;
+    max-width: 576px;
+    
+  @media screen and (min-width:768px) {
+    & {
+      width: 60%;
+    }
+  }
+
+  /* sm */
+  @media screen and (min-width:992px) {
+    & {
+      width: 40%;
+    }
+  }
+
+  /* lg */
+  @media screen and (min-width:1200px) {
+    & {
+      width: 30%;
+    }
+  }
+}
+}
